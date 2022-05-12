@@ -27,7 +27,7 @@
       <div class="container text-center">
             <a href="#"
               ><img
-                src="images/Deliciuoz logo.png" class="footer-logo"
+                src="images/deliciouz logo.png" class="footer-logo"
             /></a>
         <p class="footer-color">All rights reserved. Designed by <a href="#">Tiana Coker</a></p>
       </div>

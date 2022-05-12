@@ -148,6 +148,16 @@ padding: 4% 0;
     margin: 2%; 
 }
 
+.box-3:hover .image {
+
+    opacity: 0.5;
+    
+}
+
+.box-3:hover .text-hover{
+    color: rgb(41, 17, 17);
+    background-color: orange;
+}
 /* Food Menu */
 .food-menu{
     

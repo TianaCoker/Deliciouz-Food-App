@@ -36,7 +36,7 @@
               $title = $row['title'];
               $image_name = $row['image_name'];
               ?>
-              <a href="category-foods.html">
+              <a href="category-foods.php" >
                   <div class="box-3 float-container">
                         <?php
                             if ($image_name=="") 
@@ -49,14 +49,14 @@
                               <img
                               src="images/category/<?php echo $image_name; ?>"
                               alt="deli-food category-images"
-                              class="img-responsive img-curve"
+                              class="img-responsive img-curve image"
                             />
-                            
+                             
                               <?php
                             }
                         ?>
                         
-                      <h3 class="float-text text-white"><?php echo $title; ?></h3>
+                      <h3 class="float-text text-white text-hover"><?php echo $title; ?></h3>
                   </div>
               </a>
               <?php

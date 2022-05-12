@@ -16,7 +16,7 @@
       <div class="container">
         <div class="logo">
           <img
-            src="images/deliciouz logo2.png"
+            src="images/deliciouz logo.png"
             alt="Deliciouz logo"
             class="img-responsive"
           />
