@@ -18,15 +18,16 @@
 
     <!--Category Section Starts Here-->
     <section class="categories">
-      <div class="container">
-        <h2 class="text-center">Explore Foods</h2>
+    <h2 class="text-center">Explore Foods</h2>
+      <div class="flex-container">
+        
 
         <!--Getting the Categories from the Database-->
         <?php 
           //Create sql query to display 
           //Execute the query
           //count the no of rows in the category table
-          $sql = "SELECT * FROM tbl_category";
+          $sql = "SELECT * FROM tbl_category WHERE active='Yes' AND featured='Yes' LIMIT 3";
           $res = mysqli_query($conn, $sql);
           $count = mysqli_num_rows($res);
           if($count>0){
@@ -36,8 +37,8 @@
               $title = $row['title'];
               $image_name = $row['image_name'];
               ?>
-              <a href="category-foods.php" >
-                  <div class="box-3 float-container">
+              <a href="category-foods.php" class="flex-box float-container" >
+                  <div >
                         <?php
                             if ($image_name=="") 
                             {

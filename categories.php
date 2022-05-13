@@ -1,109 +1,91 @@
 <?php include('partials-front/menu.php'); ?>
 
-    <!-- CAtegories Section Starts Here -->
+    <!-- Categories Section Starts Here -->
     <section class="categories">
-        <div class="container">
-            <h2 class="text-center">Explore Foods</h2>
+    <h1 class="text-center explore-food">Explore Foods</h1>
 
-            <a href="category-foods.html">
-            <div class="box-3 float-container">
-                <img src="images/pizza.jpg" alt="Pizza" class="img-responsive img-curve">
+    <div class="flex-container ">
 
-                <h3 class="float-text text-white">Pizza</h3>
+        <a href="category-foods.php" class="flex-box float-container">
+            <div >
+            <img src="images/jollof rice.jpg" alt="Pizza" class="img-responsive img-curve image">
+
+            <h3 class="text-white float-text text-hover">Jollof Rice</h3>
             </div>
-            </a>
+        </a>
 
-            <a href="#">
-            <div class="box-3 float-container">
-                <img src="images/burger.jpg" alt="Burger" class="img-responsive img-curve">
 
-                <h3 class="float-text text-white">Burger</h3>
+        <a href="category-foods.php" class="flex-box float-container">
+            <div >
+            <img src="images/korean food.jpg" alt="Pizza" class="img-responsive img-curve image">
+
+            <h3 class=" text-white float-text text-hover">Korean Rice</h3>
             </div>
-            </a>
+       </a>
 
-            <a href="#">
-            <div class="box-3 float-container">
-                <img src="images/momo.jpg" alt="Momo" class="img-responsive img-curve">
 
-                <h3 class="float-text text-white">Momo</h3>
+       <a href="category-foods.php" class="flex-box float-container">
+            <div >
+            <img src="images/snacks.jpg" alt="Pizza" class="img-responsive img-curve image">
+
+            <h3 class=" text-white float-text text-hover">Snacks</h3>
             </div>
-            </a>
+       </a>
 
-            <a href="#">
-            <div class="box-3 float-container">
-                <img src="images/pizza.jpg" alt="Pizza" class="img-responsive img-curve">
 
-                <h3 class="float-text text-white">Pizza</h3>
+       <a href="category-foods.php" class="flex-box float-container">
+            <div >
+            <img src="images/korean food.jpg" alt="Pizza" class="img-responsive img-curve image">
+
+            <h3 class=" text-white float-text text-hover">Korean Rice</h3>
             </div>
-            </a>
+       </a>
 
-            <a href="#">
-            <div class="box-3 float-container">
-                <img src="images/burger.jpg" alt="Burger" class="img-responsive img-curve">
 
-                <h3 class="float-text text-white">Burger</h3>
+       <a href="category-foods.php" class="flex-box float-container">
+            <div >
+            <img src="images/snacks.jpg" alt="Pizza" class="img-responsive img-curve image">
+
+            <h3 class=" text-white float-text text-hover">Snacks</h3>
             </div>
-            </a>
+       </a>
 
-            <a href="#">
-            <div class="box-3 float-container">
-                <img src="images/momo.jpg" alt="Momo" class="img-responsive img-curve">
+       <a href="category-foods.php" class="flex-box float-container">
+            <div >
+            <img src="images/jollof rice.jpg" alt="Pizza" class="img-responsive img-curve image">
 
-                <h3 class="float-text text-white">Momo</h3>
+            <h3 class="text-white float-text text-hover">Jollof Rice</h3>
             </div>
-            </a>
-            <a href="#">
-            <div class="box-3 float-container">
-                <img src="images/pizza.jpg" alt="Pizza" class="img-responsive img-curve">
+        </a>
 
-                <h3 class="float-text text-white">Pizza</h3>
+        <a href="category-foods.php" class="flex-box float-container">
+            <div >
+            <img src="images/snacks.jpg" alt="Pizza" class="img-responsive img-curve image">
+
+            <h3 class=" text-white float-text text-hover">Snacks</h3>
             </div>
-            </a>
+       </a>
 
-            <a href="#">
-            <div class="box-3 float-container">
-                <img src="images/burger.jpg" alt="Burger" class="img-responsive img-curve">
 
-                <h3 class="float-text text-white">Burger</h3>
+       <a href="category-foods.php" class="flex-box float-container">
+            <div >
+            <img src="images/jollof rice.jpg" alt="Pizza" class="img-responsive img-curve image">
+
+            <h3 class="text-white float-text text-hover">Jollof Rice</h3>
             </div>
-            </a>
+        </a>
 
-            <a href="#">
-            <div class="box-3 float-container">
-                <img src="images/momo.jpg" alt="Momo" class="img-responsive img-curve">
 
-                <h3 class="float-text text-white">Momo</h3>
+        <a href="category-foods.php" class="flex-box float-container">
+            <div >
+            <img src="images/korean food.jpg" alt="Pizza" class="img-responsive img-curve image">
+
+            <h3 class=" text-white float-text text-hover">Korean Rice</h3>
             </div>
-            </a>
+       </a>
 
-            <a href="#">
-            <div class="box-3 float-container">
-                <img src="images/pizza.jpg" alt="Pizza" class="img-responsive img-curve">
 
-                <h3 class="float-text text-white">Pizza</h3>
-            </div>
-            </a>
-
-            <a href="#">
-            <div class="box-3 float-container">
-                <img src="images/burger.jpg" alt="Burger" class="img-responsive img-curve">
-
-                <h3 class="float-text text-white">Burger</h3>
-            </div>
-            </a>
-
-            <a href="#">
-            <div class="box-3 float-container">
-                <img src="images/momo.jpg" alt="Momo" class="img-responsive img-curve">
-
-                <h3 class="float-text text-white">Momo</h3>
-            </div>
-            </a>
-
-            
-
-            <div class="clearfix"></div>
-        </div>
+    </div>
     </section>
     <!-- Categories Section Ends Here -->
 
