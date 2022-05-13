@@ -54,9 +54,20 @@ padding:1%;
         color:red;
     }
 
+    .link-color{
+        color:black;
+    }
+
     .btn{
 
-        padding:1%;
+        padding:3%;
+        border:none;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+    .btn-search{
+        padding: 1%;
         border:none;
         border-radius: 5px;
         font-size: 1rem;

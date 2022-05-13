@@ -104,80 +104,50 @@
          // 1.get all the values from our form
          // 2. update the DB
          // 3. redirect with message to manage category
+         
          if(isset($_POST['submit'])){
-             $id = $_POST['id'];
-            $title = $_POST['title'];
-            $current_image = $_POST['current_image'];
-            $featured = $_POST['featured'];
-            $active = $_POST['active'];
+            $id = $_POST['id'];
+           $title = $_POST['title'];
+           $current_image = $_POST['current_image'];
+           $featured = $_POST['featured'];
+           $active = $_POST['active'];
 
-            // work on updating new image if selected
-            if(isset($_FILES['image']['name'])){
-                //get image details
-                   $image_name = $_FILES['image']['name'];
+           // work on updating new image if selected
+           if(isset($_FILES['image']['name'])){
+            $image_name = $_FILES['image']['name'];
+
+            if($image_name!=""){
+                $ext = end(explode('.',$image_name));
+                $image_name = "Food_Category_".rand(000, 999).'.'.$ext;
+                $src_path = $_FILES['image']['tmp_name'];
+                $dest_path = "../images/category/".$image_name;
+                $upload = move_uploaded_file($src_path, $dest_path);
                 
-                   //is image available?
-                  if($image_name!=""){
-                
-                    //lets AutoRename the uploaded image name
-                //get the extension of the image
-                //use the explode function
-
-                $ext = end(explode('.', $image_name));
-
-                //then rename the image
-
-                $image_name = "Food_Category_".rand(000,999).'.'.$ext;
-
-        
-                $source_path = $_FILES['image']['tmp_name'];
-                $destination_path = "../images/category/".$image_name;
-
-                //to upload the image
-
-                $upload = move_uploaded_file($source_path, $destination_path);
-
-                //check whether image is uploaded or not
-                //if image is not uploaded,
-                //stop the process and redirect with error msg
-
-                if($upload==false){
-                    //set msg
-
-                    $_SESSION['upload'] = "<div class='error'>Failed to upload image</div>";
-                    //redirect to add-category page
+                if($upload == false){
+                    $_SESSION['upload'] = "<div class='error'>Failed to Upload New Image. </div>";
                     header('location:'.SITEURL.'admin/manage.category.php');
-                    //stop the process
                     die();
                 }
 
-                //Remove old image if its available
                 if($current_image!=""){
+                    $remove_path="../images/category/".$current_image;
+                    $remove = unlink($remove_path);
 
-                
-                        $remove_path = " ../images/category/".$current_image;
-                        $remove = unlink($remove_path);
+                    if ($remove ==false){
+                        $_SESSION['remove-failed'] = "<div class='error'>Failed to Remove Current Image. </div>";
+                        header('location:'.SITEURL.'admin/manage.category.php');
+                        die();
+                    }
+                }
 
-                        //if image removed failed?
-                        if($remove==false){
-
-                            $_SESSION['failed-remove'] = "<div class='error'>Failed to Remove Current Image</div>";
-                            header('location:'.SITEURL.'admin/manage.category.php');
-                            die();
-                        }
-            }
-
-                  }
-                  else{
-                    $image_name = $current_image;
-                  }
-
-
-            }
-            else{
+            }else{
                 $image_name = $current_image;
             }
-
+        }
+        else{
+            $image_name = $current_image;
+        }
+        
             $sql2 = "UPDATE tbl_category SET
                       title='$title',
                       image_name='$image_name',

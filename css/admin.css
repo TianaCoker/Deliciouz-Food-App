@@ -49,6 +49,7 @@ table tr td{
     color: white;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 5px;
 
 }
 
@@ -62,6 +63,7 @@ table tr td{
     color: black;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 3px;
 
 }
 
@@ -75,11 +77,12 @@ table tr td{
     color: white;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 3px;
 
 }
 
 .btn-danger:hover{
-    background-color: #ff4757;
+    background-color: rgb(231, 3, 3);
 }
 
 .success{

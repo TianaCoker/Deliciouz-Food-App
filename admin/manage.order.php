@@ -28,6 +28,7 @@
          
         </td>
       </tr>
+      
 
       <!- Third Row->
       <tr>
@@ -36,9 +37,10 @@
         <td>Tee</td>
         <td><a href="#" class="btn-secondary">Update Admin</a>
           <a href="#" class="btn-danger">Delete Admin</a>
+          
         </td>
       </tr>
-
+      
       <!- Fourth Row->
       <tr>
         <td>3.</td>

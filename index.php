@@ -9,7 +9,7 @@
             type="submit"
             value="search"
             name="submit"
-            class="btn btn-primary"
+            class="btn-search btn-primary"
           />
         </form>
       </div>
@@ -79,123 +79,74 @@
     <section class="food-menu food-menu-color-primary">
       <div class="container">
         <h2 class="text-center">Food Menu</h2>
+        <?php 
+        //get Food from database
+        //create sql query
+        //execute the query
+        //count the rows
+        //check whether food is aavailable
+        $sql2 = "SELECT * FROM tbl_food WHERE active='Yes' AND featured='Yes' LIMIT 6";
+        $res2 = mysqli_query($conn, $sql2);
+        $count2 =mysqli_num_rows($res2);
+        if($count2 > 0){
+          while($row = mysqli_fetch_assoc($res2)){
+            $id = $row['id'];
+            $title = $row['title'];
+            $price = $row['price'];
+            $description = $row['description'];
+            $image_name = $row['image_name'];
+            ?>
+              <div class="food-menu-box food-menu-box-color-primary">
+                  <div class="food-menu-img">
+                    <?php 
+                    if($image_name==""){
+                      echo "<div class='error'>Image Not Available. </div>";
+                    }
+                    else{
+                      ?>
+                      <img src="images/food/<?php echo $image_name; ?>" alt="<?php echo $image_name; ?>"
+                        class="img-responsive img-curve"
+                      />
+                      <?php
 
-        <div class="food-menu-box food-menu-box-color-primary">
-          <div class="food-menu-img">
-            <img
-              src="images/menu-pizza.jpg"
-              alt="chicken pizza"
-              class="img-responsive img-curve"
-            />
-          </div>
-          <div class="food-menu-desc">
-            <h4>Food Title</h4>
-            <p class="food-price">$12.3</p>
-            <p class="food-detail">
-              Made with Italian Sauce,Chicken and organic vegetable
-            </p>
-            <br />
-            <a href="order.html" class="btn btn-primary">Order Now</a>
-          </div>
+                    }
+                    
+                    ?>
+                      
+                  </div>
+                  <div class="food-menu-desc">
+                     <h4><?php echo $title; ?></h4>
+                      <p class="food-price">$<?php echo $price; ?></p>
+                      <p class="food-detail">
+                        <?php echo $description; ?>
+                      </p>
+                      <br />
+                      <a href="order.php" class="btn btn-primary">Order Now</a>
+                  </div>
+                 </div>
+            <?php
+
+          }
+
+        }
+        else{
+          echo "<div class='error'>Food Not Available. </div>";
+        }
+
+        
+        
+        ?>
+
+        
           <div class="clearfix"></div>
         </div>
-        <div class="food-menu-box food-menu-box-color-primary">
-          <div class="food-menu-img">
-            <img
-              src="images/menu-burger.jpg"
-              alt="chicken burger"
-              class="img-responsive img-curve"
-            />
-          </div>
-          <div class="food-menu-desc">
-            <h4>Chicken Burger</h4>
-            <p class="food-price">$12.3</p>
-            <p class="food-detail">
-              Made with Italian Sauce,Chicken and organic vegetable
-            </p>
-            <br />
-            <a href="#" class="btn btn-primary">Order Now</a>
-          </div>
-          <div class="clearfix"></div>
-        </div>
-        <div class="food-menu-box food-menu-box-color-primary">
-          <div class="food-menu-img">
-            <img
-              src="images/menu-burger.jpg"
-              alt="chicken burger"
-              class="img-responsive img-curve"
-            />
-          </div>
-          <div class="food-menu-desc">
-            <h4>Nice Burger</h4>
-            <p class="food-price">$12.3</p>
-            <p class="food-detail">
-              Made with Italian Sauce,Chicken and organic vegetable
-            </p>
-            <br />
-            <a href="#" class="btn btn-primary">Order Now</a>
-          </div>
-          <div class="clearfix"></div>
-        </div>
-        <div class="food-menu-box food-menu-box-color-primary">
-          <div class="food-menu-img">
-            <img
-              src="images/menu-momo.jpg"
-              alt="chicken momo"
-              class="img-responsive img-curve"
-            />
-          </div>
-          <div class="food-menu-desc">
-            <h4>Chicken Steam Momo</h4>
-            <p class="food-price">$12.3</p>
-            <p class="food-detail">
-              Made with Italian Sauce,Chicken and organic vegetable
-            </p>
-            <br />
-            <a href="#" class="btn btn-primary">Order Now</a>
-          </div>
-          <div class="clearfix"></div>
-        </div>
-        <div class="food-menu-box food-menu-box-color-primary">
-          <div class="food-menu-img">
-            <img
-              src="images/menu-pizza.jpg"
-              alt="chicken pizza"
-              class="img-responsive img-curve"
-            />
-          </div>
-          <div class="food-menu-desc">
-            <h4>Food Title</h4>
-            <p class="food-price">$12.3</p>
-            <p class="food-detail">
-              Made with Italian Sauce,Chicken and organic vegetable
-            </p>
-            <br />
-            <a href="#" class="btn btn-primary">Order Now</a>
-          </div>
-          <div class="clearfix"></div>
-        </div>
-        <div class="food-menu-box food-menu-box-color-primary">
-          <div class="food-menu-img">
-            <img
-              src="images/menu-burger.jpg"
-              alt="chicken burger"
-              class="img-responsive img-curve"
-            />
-          </div>
-          <div class="food-menu-desc">
-            <h4>Chicken Burger</h4>
-            <p class="food-price">$12.3</p>
-            <p class="food-detail">
-              Made with Italian Sauce,Chicken and organic vegetable
-            </p>
-            <br />
-            <a href="#" class="btn btn-primary">Order Now</a>
-          </div>
-          <div class="clearfix"></div>
-        </div>
-        <div class="clearfix"></div>
-      </div>
+        
+        
+        
+        
+        <p class="text-center">
+          <a href="foods.php" class="link-color">See All Foods</a>
+        </p>
     </section>
     <!--Food Menu Ends Here-->
 
