@@ -40,7 +40,7 @@
                         }
                         else{
                             ?>
-                            <img src="images/food/<?php echo $image_name; ?>" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
+                            <img src="images/food/<?php echo $image_name; ?>" alt="<?php echo $image_name; ?>" class="img-responsive img-curve">
                             <?php
                         }
                         ?>

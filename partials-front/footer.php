@@ -29,7 +29,7 @@
               ><img
                 src="images/deliciouz logo.png" class="footer-logo"
             /></a>
-        <p class="footer-color">All rights reserved. Designed by <a href="#">Tiana Coker</a></p>
+        <p class="footer-color">All rights reserved. Designed by <a href="https://www.instagram.com/tiana.coker">Tiana Coker</a></p>
       </div>
     </section>
     <!--Footer Ends Here-->
