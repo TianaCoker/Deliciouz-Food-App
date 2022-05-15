@@ -37,7 +37,7 @@
                       ?>
                    
 
-                     <h3 class="text-white float-text text-hover"><?php echo $title; ?></h3>
+                     <h3 class="text-white float-text text-hover text-visible"><?php echo $title; ?></h3>
                  </div>
                </a>
 

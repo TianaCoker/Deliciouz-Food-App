@@ -3,7 +3,7 @@
     <!--Food Search Section Starts Here-->
     <section class="food-search text-center">
       <div class="container">
-        <form action="food-search.html" method="POST">
+        <form action="food-search.php" method="POST">
           <input type="search" name="search" placeholder="search for food" />
           <input
             type="submit"
@@ -57,7 +57,7 @@
                             }
                         ?>
                         
-                      <h3 class="float-text text-white text-hover"><?php echo $title; ?></h3>
+                      <h3 class="float-text text-white text-hover text-visible"><?php echo $title; ?></h3>
                   </div>
               </a>
               <?php
@@ -145,7 +145,7 @@
         
         
         <p class="text-center">
-          <a href="foods.php" class="link-color">See All Foods</a>
+          <a href="foods.php" class="link-color food-border">See All Foods</a>
         </p>
     </section>
     <!--Food Menu Ends Here-->

@@ -37,6 +37,9 @@ padding:1%;
   .text-white{
     color:white;
 }
+
+
+
 .text-navy{
     color:#021330;
 }
@@ -180,10 +183,21 @@ padding: 4% 0;
 }  
 
 .flex-box:hover .text-hover{
-    color: rgb(41, 17, 17);
-    background-color: orange;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    padding: 2%;
+    text-align: left;
+    font-size: 1rem;
+    visibility: visible;
+    
     
 }
+
+.text-visible{
+    visibility: hidden;
+}
+
 
 
 .box-3{
@@ -261,6 +275,19 @@ padding: 4% 0;
     color:#021330;
 }
 
+.food-border{
+    border: 2px solid black;
+    padding: 0.5%;
+    border-radius: 5px;
+}
+
+.food-border:hover{
+    color:white;
+    background-color: red;
+    border: 1px solid orangered;
+    
+}
+
 /* Social */
 .footer{
     background-color: black;
@@ -327,6 +354,8 @@ padding: 4% 0;
         margin-bottom: 3%;
     }
 
+    
+
     .btn{
         width: 90%;
         padding: 2%;
@@ -334,6 +363,10 @@ padding: 4% 0;
 
     .food-search{
         padding: 10% 0;
+    }
+
+    .food-border{
+        padding:1%;
     }
 
     .categories{
