@@ -86,6 +86,14 @@ padding:1%;
         background-color: rgb(219, 5, 5);
         color:white;
     }
+
+    
+    .field-display{
+        display:grid;
+    }
+    .btn-align{
+        margin: auto;
+    }
     h2{
         color:#2f3542;
         font-size: 1.5rem;
@@ -113,6 +121,16 @@ padding:1%;
         margin: 5%;
         padding: 3%;
         border-radius: 5px;
+    }
+
+    .error{
+        color:red;
+        padding: 2%;
+    }
+
+    .success{
+        color:green;
+        padding: 2%;
     }
 /* NavBar Section */
 
@@ -358,6 +376,11 @@ padding: 4% 0;
 
     .btn{
         width: 90%;
+        padding: 2%;
+    }
+
+    .btn-order{
+        width:40%;
         padding: 2%;
     }
 

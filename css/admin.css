@@ -37,10 +37,15 @@ table tr th{
     border-bottom: 1px solid black;
     padding: 1%;
     text-align: left;
+    white-space: nowrap;
 }
 
+
 table tr td{
-    padding:1%;
+    
+    padding: 0.5em;
+    padding-right: 1em;
+    
 }
 
 .btn-primary{
@@ -64,7 +69,7 @@ table tr td{
     text-decoration: none;
     font-weight: bold;
     border-radius: 3px;
-
+    
 }
 
 .btn-secondary:hover{
@@ -91,6 +96,13 @@ table tr td{
 
 .error{
     color:#ff4757;
+}
+
+.btn{
+    padding:5%;
+    border-radius: 5px;
+    white-space: nowrap;
+    border:none;
 }
 
 /*  CSS FOR Menu */
@@ -134,6 +146,26 @@ padding: 1%;
     float: left;
 }
 
+ .delivery{
+    color:orange;
+    font-weight: bold;
+}
+
+.delivered{
+    color:green;
+    font-weight: bold;
+    
+}
+.cancelled{
+    color:red;
+    font-weight: bold;
+    
+}
+.ordered{
+    color:black;
+    font-weight: bold;
+    
+}
 
 /*  CSS FOR FOOTER */
 
@@ -158,3 +190,4 @@ padding: 1%;
     margin: auto 40%;
     
 }
+

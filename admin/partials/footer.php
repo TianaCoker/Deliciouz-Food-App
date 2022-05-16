@@ -2,8 +2,8 @@
 <div class="footer">
     <div class="wrapper">
         <p class="text-center footer footer-link">
-            2022 All rights reserved, Wow Food Restaurant. Developed by
-            <a href="#" class="footer-link">Tiana Coker</a>
+            Deliciouz 2022. All rights reserved. Developed by
+            <a href="https://www.instagram.com/tiana.coker" class="footer-link">Tiana Coker</a>
         </p>
     </div>
 </div>
