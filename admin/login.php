@@ -59,7 +59,7 @@
 
         // 1.get data from the from
 
-        $username = $_POST['username'];
+        $username =mysqli_real_escape_string($conn, $_POST['username']);
         $password = md5($_POST['password']);
 
         // 2.SQL Query to check whether the username

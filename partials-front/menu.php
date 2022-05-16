@@ -15,11 +15,13 @@
     <section class="navbar">
       <div class="container">
         <div class="logo">
+          <a href="<?php echo SITEURL;?>">
           <img
             src="images/deliciouz logo.png"
             alt="Deliciouz logo"
             class="img-responsive"
           />
+          </a>
         </div>
 
         <div class="menu text-right">

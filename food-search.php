@@ -5,7 +5,7 @@
         <div class="container">
             <?php 
             //get the search keyword and display.
-            $search = $_POST['search'];
+            $search = mysqli_real_escape_string($conn, $_POST['search']);
             ?>
             
             <h2 class="text-danger">Foods on Your Search "<?php echo $search; ?>"</h2>
