@@ -12,7 +12,7 @@
     <title>Login- Food Order System</title>
     <link rel="stylesheet" href="../css/admin.css">
 </head>
-<body>
+<body class='bg-color'>
     <div class="login">
         <h1 class="text-center">Login</h1>
         <br>
@@ -42,12 +42,12 @@
             Password:
             <input type="password" name="password" placeholder="Enter Your Password">
             <br><br>
-            <input type="submit" value="Login" name="submit" class="btn-primary btn-center">
+            <input type="submit" value="Login" name="submit" class="btn-danger btn-center">
             <br><br>
         </form>
         <!--Login Form Ended-->
 
-        <p class="text-center">Created By - <a href="www.tianacoker.com">Tiana Coker</a></p>
+        <p class="text-center">Created By - <a href="https://www.instagram.com/tiana.coker" class='link-color'>Tiana Coker</a></p>
     </div>
 </body>
 </html>

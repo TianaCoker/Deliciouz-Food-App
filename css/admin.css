@@ -55,6 +55,7 @@ table tr td{
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
+    border: 1px solid blue;
 
 }
 
@@ -69,6 +70,7 @@ table tr td{
     text-decoration: none;
     font-weight: bold;
     border-radius: 3px;
+    border:1px solid green;
     
 }
 
@@ -83,6 +85,7 @@ table tr td{
     text-decoration: none;
     font-weight: bold;
     border-radius: 3px;
+    border: 1px solid rgb(219, 3, 3);
 
 }
 
@@ -104,7 +107,10 @@ table tr td{
     white-space: nowrap;
     border:none;
 }
-
+.bg-color{
+    background: rgb(65, 64, 64);
+    background: radial-gradient(circle, rgb(206, 203, 202) 0%, rgba(247,244,244,1) 100%);
+}
 /*  CSS FOR Menu */
 .menu{
     border-bottom: 1px solid grey;
@@ -166,6 +172,9 @@ padding: 1%;
     font-weight: bold;
     
 }
+.link-color{
+    color:rgb(100, 5, 5);
+}
 
 /*  CSS FOR FOOTER */
 
@@ -184,6 +193,8 @@ padding: 1%;
     border: 1px solid grey;
     margin: 10% auto;
     padding: 2%;
+    background:whitesmoke;
+    border-radius: 10px;
 }
 
 .btn-center{
