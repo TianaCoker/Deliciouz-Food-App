@@ -29,7 +29,7 @@
     <section class="categories">
     <h2 class="text-center">Explore Foods</h2>
       <div class="flex-container">
-        
+      
 
         <!--Getting the Categories from the Database-->
         <?php 
@@ -86,15 +86,16 @@
 
     <!--Food Menu Section Starts Here-->
     <section class="food-menu food-menu-color-primary">
-      <div class="container">
-        <h2 class="text-center">Food Menu</h2>
+    <h2 class="text-center">Food Menu</h2>
+      <div class="flex-container">
+        
         <?php 
         //get Food from database
         //create sql query
         //execute the query
         //count the rows
         //check whether food is aavailable
-        $sql2 = "SELECT * FROM tbl_food WHERE active='Yes' AND featured='Yes' LIMIT 6";
+        $sql2 = "SELECT * FROM tbl_food WHERE active='Yes' AND featured='Yes' LIMIT 4";
         $res2 = mysqli_query($conn, $sql2);
         $count2 =mysqli_num_rows($res2);
         if($count2 > 0){

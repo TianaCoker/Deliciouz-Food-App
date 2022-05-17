@@ -36,8 +36,9 @@
 
     <!-- Food Menu Section Starts Here -->
     <section class="food-menu">
-        <div class="container">
-            <h2 class="text-center">Food Menu</h2>
+    <h2 class="text-center">Food Menu</h2>
+        <div class="flex-container-food">
+            
             <?php 
             //create sql query to get food based on selected category
             $sql2 = " SELECT * FROM tbl_food WHERE category_id=$category_id";
@@ -60,7 +61,7 @@
                             }
                             else{
                                 ?>
-                                <img src="images/food/<?php echo $image_name; ?>" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
+                                <img src="images/food/<?php echo $image_name; ?>" alt="<?php echo $title; ?>" class="img-responsive img-curve">
                                 <?php
                             }
                             

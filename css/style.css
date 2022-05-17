@@ -18,6 +18,14 @@ margin: 0 auto;
 padding:1%;
 }
 
+.nav-container{
+
+    width:80%;
+    margin: 0 auto;
+    
+    }
+
+    
 
 
 .img-responsive{
@@ -143,7 +151,7 @@ float:left;
 }
 
 .menu{
-    line-height: 60px;
+    line-height: 90px;
 }
 
 .menu ul{
@@ -187,10 +195,22 @@ padding: 4% 0;
     flex-direction: row;
     flex-wrap: wrap;
     width:80%;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
     padding:1%;
+    margin: 2% auto;
 }
 
+.flex-container-food{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:80%;
+    justify-content: left;
+    align-items: center;
+    padding:1%;
+    margin: 2% auto;
+}
 .flex-box{
     width:28%;
     margin: 2%; 
@@ -256,8 +276,9 @@ padding: 4% 0;
     width:43%;
     margin:1%;  
     padding: 2%;
-    float:left;
+    float:right;
     border-radius: 15px;
+    position: relative;
 }
 
 .food-menu-box-color-primary{
@@ -280,7 +301,18 @@ padding: 4% 0;
 .food-menu-desc{
     width:50%;
     float:left;
-    margin-left:8%;
+    margin-left:40%;
+    position: absolute;
+    top:50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.order-menu-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+
 }
 
 .food-price{
@@ -309,6 +341,7 @@ padding: 4% 0;
 /* Social */
 .footer{
     background-color: black;
+    
 }
 
 .footer-color{
@@ -316,8 +349,9 @@ padding: 4% 0;
 }
 
 .footer-logo{
-    width:20%;
-    display: inline
+    width:40%;
+    display: inline;
+    margin-left: 20%;
 }
 
 .social ul{
@@ -328,6 +362,19 @@ padding: 4% 0;
     display: inline;
     padding: 1%;
 }
+
+.footer-container {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+}
+.social-icons{
+    width:20%;
+    display: inline;
+    justify-self: flex-start;
+}
+
 
 /* Order Section */
 .order{
@@ -355,6 +402,15 @@ padding: 4% 0;
         width:80%;
         float:none;
         margin:2% auto;
+        
+    }
+
+    .menu{
+        line-height: 60px;
+    }
+
+    .navbar{
+        height:10%;
     }
 
     .footer-logo{
@@ -433,4 +489,24 @@ padding: 4% 0;
     .order{
         width: 100%;
     }
+
+
+    .footer-container {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+        margin-top: 1%;
+        padding: 1%;
+    }
+
+    .tee{
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    
 }

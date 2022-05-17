@@ -17,8 +17,9 @@
 
     <!-- fOOD MEnu Section Starts Here -->
     <section class="food-menu food-menu-color-secondary">
-        <div class="container">
-            <h2 class="text-center">Food Menu</h2>
+    <h2 class="text-center">Food Menu</h2>
+        <div class="flex-container-food">
+            
             <?php 
             $sql = "SELECT * FROM tbl_food WHERE active='Yes'";
             $res = mysqli_query($conn, $sql);

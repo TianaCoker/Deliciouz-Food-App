@@ -58,7 +58,7 @@
                         
                     </div>
     
-                    <div class="food-menu-desc">
+                    <div class="order-menu-desc">
                         <h3><?php echo $title; ?></h3>
                         <input type="hidden" name="food" value="<?php echo $title; ?>">
 
