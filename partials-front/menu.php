@@ -18,7 +18,7 @@
         <div class="logo">
           <a href="<?php echo SITEURL;?>">
           <img
-            src="images/deliciouz logo.png"
+            src="images/deliciouz logo-white.png"
             alt="Deliciouz logo"
             class="img-responsive"
           />
@@ -27,10 +27,10 @@
 
         <div class="menu text-right">
           <ul>
-            <li><a href="<?php echo SITEURL; ?>">Home</a></li>
-            <li><a href="<?php echo SITEURL; ?>categories.php">Categories</a></li>
-            <li><a href="<?php echo SITEURL?>foods.php">Foods</a></li>
-            <li><a href="<?php echo SITEURL?>contact.php">Contact</a></li>
+            <li><a class="hover-underline" href="<?php echo SITEURL; ?> ">Home</a></li>
+            <li><a class="hover-underline" href="<?php echo SITEURL; ?>categories.php">Categories</a></li>
+            <li><a class="hover-underline" href="<?php echo SITEURL?>foods.php">Foods</a></li>
+            <li><a class="hover-underline" href="<?php echo SITEURL?>contact.php">Contact</a></li>
           </ul>
         </div>
         <div class="clearfix"></div>

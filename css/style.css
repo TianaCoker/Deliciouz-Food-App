@@ -23,6 +23,8 @@ padding:1%;
     width:80%;
     margin: 0 auto;
     
+    
+    
     }
 
     
@@ -57,16 +59,39 @@ padding:1%;
     }
 
     a{
-        color: whitesmoke;
+        color: white;
         text-decoration: none;
+        
     }
 
-    a:hover{
-        color:red;
+    .hover-underline{
+        display:inline-block;
+        position: relative;
+    }
+    .hover-underline:after{
+        content: ' ';
+        position: absolute;
+        width:100%;
+        transform: scaleX(0);
+        height:2px;
+        bottom: 40%;
+        left:0;
+        background-color: white;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    .hover-underline:hover:after{
+        transform: scaleX(1);
+        transform-origin: bottom left;
     }
 
     .link-color{
         color:black;
+    }
+
+    .link-hover:hover{
+        color:rgb(78, 5, 5);
     }
 
     .btn{
@@ -143,11 +168,12 @@ padding:1%;
 /* NavBar Section */
 
 .navbar{
-    background-color: black;
+    background-color: red;
 }
 .logo{
 width: 20%;
 float:left;
+margin-top: 10px;;
 }
 
 .menu{
@@ -228,6 +254,8 @@ padding: 4% 0;
     text-align: left;
     font-size: 1rem;
     visibility: visible;
+    
+
     
     
 }
@@ -340,7 +368,7 @@ padding: 4% 0;
 
 /* Social */
 .footer{
-    background-color: black;
+    background-color: red;
     
 }
 
@@ -368,6 +396,8 @@ padding: 4% 0;
     flex-direction:row;
     justify-content:center;
     align-items: center;
+    padding:2%;
+    
 }
 .social-icons{
     width:20%;
@@ -411,6 +441,10 @@ padding: 4% 0;
 
     .navbar{
         height:10%;
+    }
+
+    .hover-underline:after{
+        bottom: 30%;
     }
 
     .footer-logo{

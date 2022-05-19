@@ -6,14 +6,14 @@
 
 
       <div >
-        <P class="text-white">All Rights Reserved 2022. <br>Designed By <a href="https://www.instagram.com/tiana.coker">Tiana Coker</a> </P>
+        <P class="text-white">All Rights Reserved 2022. <br>Designed By <a class='link-hover'href="https://www.instagram.com/tiana.coker">Tiana Coker</a> </P>
         </div>
 
         
         
         <div >
         <a href="#">
-              <img src="images/deliciouz logo.png" class="footer-logo"/>
+              <img src="images/deliciouz logo-white.png" class="footer-logo"/>
                 
             </a>
         </div>
