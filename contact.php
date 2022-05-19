@@ -2,7 +2,7 @@
 
 <section class="food-search">
 <div class="container">
-<h2 class="text-center text-navy">Always happy to serve you.<br> Send us a message.</h2>
+<h2 class="text-center text-navy h2-header">Always happy to serve you.<br> Send us a message.</h2>
 <form action="" class="order" method="POST">
 <fieldset class="field-display">
                     <legend>Contact Us</legend>

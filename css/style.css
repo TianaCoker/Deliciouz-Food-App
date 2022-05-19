@@ -436,8 +436,8 @@ padding: 4% 0;
     }
 
     .btn-order{
-        width:40%;
-        padding: 2%;
+        width:50%;
+        padding: 5%;
     }
 
     .food-search{
@@ -507,6 +507,12 @@ padding: 4% 0;
         align-items: center;
     }
 
+    .food-detail{
+        display:none;
+    }
     
+    .h2-header{
+        font-size: small;
+    }
     
 }
