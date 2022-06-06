@@ -29,3 +29,8 @@ Below is the link to the live project
 
 
 https://deliciouzapp.herokuapp.com/
+
+# How to Reach Me
+I'd like to join your team. 
+You can reach me on tianacoker1@gmail.com .
+
